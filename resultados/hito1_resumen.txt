@@ -1,0 +1,5 @@
+Fecha de ejecucion: 2026-11-11 18:39:00
+Semilla: 1
+Error RMS vs analitica: 0.0099 °C (0.04 % de r)
+Meta OE1: <= 5 % -> CUMPLE
+u_max usada: 79.7 W (P_max = 100 W)
