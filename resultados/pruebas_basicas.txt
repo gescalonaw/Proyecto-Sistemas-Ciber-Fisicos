@@ -1,0 +1,8 @@
+Fecha de ejecucion: 2026-11-12 11:51:55 | semilla = 1
+P1   | Sin ataque vs analitica (primeros 200 s) | RMS = 0.0099 °C (0.04 % de r) | criterio: <= 5 % de r | PASA
+P2   | Canal sin ataque: ya = y | max|ya-y| = 0.0e+00 | criterio: = 0 | PASA
+P3   | Bias b = 2 °C: T real final | T = 26.00 °C (r - b = 26.00) | criterio: |T-(r-b)| <= 0,1 °C | PASA
+P4   | Rampa rho = 0.05 °C/s: desvio real a los 100 s | r - T = 4.49 °C; d = 5.00 °C | criterio: T se aleja de r (> 5 sigma_y) | PASA
+P5a  | DoS L = 30 muestras (3 s), controlador mantiene ultimo valor | max|T-r| = 0.020 °C; muestras con a=1: 30 | criterio: a=1 exactamente L veces | PASA
+P5b  | DoS con ya = 0 (sin mantener): u en la rafaga | u max = 100 W (P_max = 100) | criterio: satura (= P_max) | PASA
+P6   | Replay tau_r = 10 s en regimen: media y desv. de ya vs y | dif. media = +0.0008 °C; dif. desv. = +0.0005 °C | criterio: |dif| < 0,02 °C (indistinguible) | PASA
